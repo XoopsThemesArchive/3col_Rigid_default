@@ -1,0 +1,194 @@
+/************** Generic Rules *************/
+img { max-width: 100%; border: 0; }	/* prevents oversize images from breaking layout in browsers that support max-width */
+
+p  {}
+h1 { margin:0; padding:0; font-size:2em; }
+h2 { margin:0; padding:0; font-size:1.5em; }
+h3 { margin:0; padding:0; font-size:1.2em; }
+h4, h5 { margin:0; padding:0; font-size:1em; }
+
+dl, dt, dd, ul, li { margin: 0;	padding: 0;	list-style: none; }
+#Main .block ul, #Left .block ul, #right .block ul,
+#Main .block dl, #Left .block dl, #Right .block dl,
+#Main .block ol, #Left .block ol, #Right .block ol{
+	margin:2px; padding: 2px;
+	margin-left: 24px;
+}
+#Main li, .block li {
+	list-style: square outside;
+	maring-left: 8px;
+}
+#Main li, .block li {
+	list-style: square outside;
+	maring-left: 8px;
+}
+
+a {color: #666; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #f60;}
+
+table { /*width: 100%;*/ margin: 0; padding: 0; border-collapse: collapse; }
+th { background-color: #2F5376; color: #FFF; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif; }
+td { padding: 0; border-width: 0; vertical-align: top; font-family: Verdana, Arial, Helvetica, sans-serif; }
+table caption { text-align:left; font-style:italic; font-size: 1.1em; padding: 0 0 5px; }
+
+em { font-style: italic; }
+strong { font-weight: bold; }
+
+.x-small { font-size: 80%; }
+.small { font-size: 90%;}
+.large { font-size: 110%; }
+.x-large { font-size: 120%; }
+
+.floatLeft { float: left; }
+.floatRight { float: right; }
+.marginCenter { margin-left:auto; margin-right:auto; }
+.clearall { clear: both; }
+.alignRight { text-align: right; }
+.alignLeft { text-align: left; }
+.alignCenter {text-align: center; }
+
+/*************** Main menu and User menu ******************/
+#mainmenu,
+#usermenu {
+	border-top: 1px solid silver;
+	border-right: 1px solid #666;
+	border-bottom: 1px solid #666;
+	border-left: 1px solid silver;
+	background-color: #e6e6e6;
+}
+#mainmenu a { background:transparent; display: block; margin: 0; padding: 4px; }
+#mainmenu a:hover { background-color: #fff; }
+#mainmenu a.menuTop { padding-left: 3px; border-top: 0px solid silver; }
+#mainmenu a.menuMain { padding-left: 3px; border-top: 1px solid #666; }
+#mainmenu a.menuSub { padding-left: 9px; border-top: 1px solid #666; }
+
+#usermenu a { background: transparent; display: block; margin: 0; padding: 4px; border-top: 1px solid #666;  }
+#usermenu a:hover { background-color: #fff; }
+#usermenu a.menuTop { padding-left: 3px; border-top: 0px solid silver; }
+#usermenu a.highlight { background-color: #fcc; }
+
+/******************* xoops generic rules *****************/
+input.formButton {}
+
+.item { border: 1px solid #cccccc; }
+.itemHead { padding: 3px; background-color: #2F5376; color: #FFFFFF; }
+.itemInfo { text-align: right; padding: 3px; background-color: #efefef; }
+.itemTitle a { font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent; }
+.itemPoster { font-size: 90%; font-style:italic; }
+.itemPostDate { font-size: 90%; font-style:italic; }
+.itemStats { font-size: 90%; font-style:italic; }
+.itemBody { padding-left: 5px;}
+.itemText { margin-top: 5px; margin-bottom: 5px; line-height: 1.5em; }
+.itemText:first-letter { font-size: 133%; font-weight: bold;}
+.itemFoot { text-align: right; padding: 3px; background-color: #efefef; }
+.itemAdminLink { font-size: 90%; }
+.itemPermaLink { font-size: 90%; }
+
+.outer { border: 1px solid silver;}
+.head  { background-color: #c2cdd6; padding: 5px; font-weight: bold; }
+.even { background-color: #dee3e7; padding: 5px; }
+.odd { background-color: #E9E9E9; padding: 5px; }
+.foot { background-color: #c2cdd6; padding: 5px; font-weight: bold; }
+tr.even td { background-color: #dee3e7; padding: 5px; }
+tr.odd td { background-color: #E9E9E9; padding: 5px; }
+
+div.errorMsg { background-color: #fcc; text-align: center; border-top: 1px solid #ddf; border-left: 1px solid #ddf; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa; font-weight: bold; padding: 10px; }
+div.confirmMsg { background-color: #ddffdf; color: #136C99; text-align: center; border-top: 1px solid #ddf; border-left: 1px solid #ddf; border-right: 1px solid #aaa; border-bottom: 1px solid #aaa; font-weight: bold; padding: 10px; }
+div.resultMsg { background-color : #ccc; color: #333; text-align: center; border-top: 1px solid silver; border-left: 1px solid silver; font-weight: bold; border-right: 1px solid #666; border-bottom: 1px solid #666; padding: 10px; }
+
+div.xoopsCode { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px; margin: .5em; }
+div.xoopsQuote { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0px 6px 6px; margin: .5em; }
+.xoopsCode pre { font-size: 100%; margin: 0; padding: .5em; }
+.xoopsQuote blockquote { margin: .5em; }
+
+.comTitle { font-weight: bold; margin-bottom: 2px; }
+.comText { padding: 2px; }
+.comUserStat { font-size: 10px; color: #2F5376; font-weight:bold; border: 1px solid silver; background-color: #fff; margin: 2px; padding: 2px; }
+.comUserStatCaption { font-weight: normal; }
+.comUserStatus { margin-left: 2px; margin-top: 10px; color: #2F5376; font-weight:bold; font-size: 10px; }
+.comUserRank { margin: 2px; }
+.comUserRankText { font-size: 10px;font-weight:bold; }
+.comUserRankImg { border: 0; }
+.comUserName {}
+.comUserImg { margin: 2px;}
+.comDate { font-weight: normal; font-style: italic; font-size: smaller; }
+.comDateCaption { font-weight: bold; font-style: normal; }
+
+/* xoopsForm */
+.xoopsForm {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.xoopsFormHeader {
+	margin: 1em 0 0;
+	padding: .5em 10px;
+	fontsize: 1em;
+	color: #fff;
+	background: #2F5376;
+}
+
+.xoopsForm fieldset,
+.xoopsForm dl,
+.xoopsForm ul {
+	margin: 0;
+	padding: .5em 0 1.3em;
+	border-width: 1px;
+	border-color: #776d6b;
+	border-style: none none dotted none;
+}
+.fieldLast {
+	border-bottom: none;
+}
+.label {
+	clear: left;
+	display: block;
+	padding-top: .8em;
+	padding-left: 10px;
+	float: left;
+	width: 140px;
+	line-height: 2em;
+}
+.control {
+	display: block;
+	margin: 0 0 0 150px;
+	padding-top: .8em;
+	line-height: 2em;
+}
+
+/*.xoopsForm input, .xoopsForm select, .xoopsForm textarea {
+	border-style: solid;
+	border-width: 1px;
+	border-color: #aaaa94 #dfdfd6 #dfdfd6 #aaaa94;
+	vertical-align: bottom;
+	color: #696969;
+	background: #f1f1ed;
+	padding: 3px;
+}
+.xoopsForm input.radio {
+	border-style: none;
+	color: #000;
+	background: transparent;
+}
+
+.xoopsFormSubmit {
+	margin-top: 1em;
+	color: #444;
+	background: url(../images/bg_submit1.gif) no-repeat;
+}
+.xoopsFormSubmit input {
+	margin-left: .5em;
+	border-width: 2px;
+	border-color: #587B9C #1A3854 #1A3854 #587B9C;
+	width: 6em;
+	vertical-align: middle;
+	color: #fff;
+	background: #2F5376;
+}
+.xoopsFormSubmit p {
+	margin: 0;
+	padding: 10px;
+	text-align: right;
+	background: url(../images/bg_submit2.gif) no-repeat;
+}*/
+

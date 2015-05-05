@@ -1,0 +1,235 @@
+body {
+	margin: 0;
+	padding: 0;
+	background: gray url(../images/xxxxx.gif) repeat-y left top; /* this BG tiles the area outside the Container */
+	color: #000;
+	font-family: "£Í£Ó £Ð¥´¥·¥Ã¥¯", "¥Ò¥é¥®¥Î³Ñ¥´", Osaka, sans-serif; /* Need this ? */
+	font-size: 100.01%; /* this body font-size fixes an IE bug and maintains x-browser uniformity */
+	/*text-align: center;*/ /* centers the #Container element in IE5.x/win */
+}
+
+/* fix for pop-up window to expand full width */
+body.showBlockL1R1, body.showBlockL1R0, body.showBlockL0R1, body.showBlockL0R0 {
+	text-align: center; /* centers the #Container element against IE5.x/win */
+}
+
+/****************** Main Page Structure *****************/
+#Container {
+	width: 780px;
+	margin: 0 auto;
+	padding: 0;
+/*	border: 1px solid #dee7e7;*/
+	text-align: left;
+	font-size: 100%; /* set global font-size here */
+	position: relative;
+}
+/** html #Container {
+	width: 782px;
+	w\idth: 780px;
+}*/	/* you need ie hack if side border attached to Container */
+
+.showBlockL1R1 #Container {
+	background: #f2f2f2 url(../images/L1R1_container_bg.png) center top repeat-y;
+}
+.showBlockL1R0 #Container {
+	background: #f2f2f2 url(../images/L1R0_container_bg.png) center top repeat-y;
+}
+.showBlockL0R1 #Container {
+	background: #f2f2f2 url(../images/L0R1_container_bg.png) center top repeat-y;
+}
+.showBlockL0R0 #Container {
+	background: #f2f2f2 url(../images/L0R0_container_bg.png) center top repeat-y;
+}
+
+/*************** Header and Footer elements *****************/
+
+#Header {
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	height: 100px;
+	background: #2F5376 url(../images/xxxxx.jpg) no-repeat left top;
+	color: #fff;
+}
+#siteLogo {
+	float: left;
+	virtical-align: middle;
+}
+#ThemeDescription {	/* only for a demonstraion */
+	dispaly: bock;
+	float: right;
+	margin: 30px 30px 0 0;
+	font-size: 130%;
+}
+
+#Banner { float: right; padding: 20px 20px 0 0; }
+#SiteName, #SiteSlogan { position: absolute; left: -999em; }
+
+#Footer {
+	width: 100%;
+	clear: both;
+	height: 23px;
+	position: relative;
+	text-align: center;
+	background: #ddd url(../images/hbar.gif) repeat-x left top;
+	color: gray;
+}
+
+/************ main columns **********/
+#Main {
+	background: transparent;
+	text-align: left;
+	color: #000;
+	float: left;
+	position: relative;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.showBlockL1R1 #Main {	/* for 3 columns */
+	width: 440px;
+	left: 170px;
+}
+.showBlockL1R0 #Main {	/* for 2 cols of left and center */
+	width: 610px;
+	left: 170px;
+}
+.showBlockL0R1 #Main {	/* for 2 cols of center and right */
+	width: 610px;
+	left: 0;
+}
+.showBlockL0R0 #Main {	/* center only */
+	width: 780px;
+	float: none;
+}
+
+#Left {
+	width: 170px;
+	height: auto;
+	background-color: transparent;
+	display: inline;
+	float: left;
+	position: relative;
+	margin: 0 0 10px;
+	padding: 0;
+}
+.showBlockL1R1 #Left {	/* for 3 cols */
+	left: -440px;
+}
+.showBlockL1R0 #Left {	/* for 2 cols of left and center */
+	left: -610px;
+}
+
+#Right {
+	width: 170px;
+	height: auto;
+	margin: 0 0 10px;
+	padding: 0;
+	background-color: transparent/*#dee7e7*/;
+	display: inline;
+	float: right;
+	position: relative;
+}
+
+/************** blocks and modules ****************/
+/* columns of xoops */
+#ModuleContents {
+	margin: 10px 10px 0;
+	padding: 0;
+	position: relative;
+	background: #fff;
+}
+#Wrapper {
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#CenterLColumn {
+	float: left;
+	width: 49%;
+	margin: 0;
+	padding: 0;
+}
+#CenterRColumn {
+	float: right;
+	width: 49%;
+	margin: 0;
+	padding: 0;
+}
+
+.block {
+	border: 1px solid #c2cdd6;
+	background: #fff;
+	margin: 10px 10px 0;
+	padding: 0;
+}
+#CenterLColumn .block {
+	margin-right: 0;
+}
+#CenterRColumn .block {
+	margin-left: 0;
+}
+
+.blockTitle {
+	height: auto;
+	padding: 5px;
+	background: #ddd;
+	color: #639ACE;
+	font-weight: bold;
+	font-size:1em;
+	border-bottom: 1px solid #c2cdd6;
+}
+#Left .blockTitle,
+#Right .blockTitle {
+	padding: 2px
+}
+
+.blockContent {
+	padding: 3px;
+}
+
+/************** Special Fixes *************/
+img { max-width: 100%; }
+/* prevents oversize images from breaking layout in browsers that support max-width */
+
+/* \*/
+* html #Container,
+* html #Main,
+* html #Wrapper,
+* html #Left,
+* html #Right,
+* html .block,
+* html #Main a,
+* html #Wrapper a,
+* html #Left a,
+* html #Right a,
+* html #mainmenu a,
+* html #usermenu a
+{height: 1%;}
+/* Holly hack */
+
+/**************** Utility Rules *******************/
+.skip {
+	position: absolute;
+	left: -999em;
+}
+
+/*\*/ /*/
+#mainmenu a:hover,
+#usermenu a:hover {
+	position: relative;
+}
+/* this fixes an IE/mac hover bug in the left column, hidden from other browsers */
+
+.clearFix:after {	/* www.positioniseveytthing.net */
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.clearFix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearFix {height: 1%;}
+.clearFix {display: block;}
+/* End hide from IE-mac */
+

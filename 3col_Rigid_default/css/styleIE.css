@@ -1,0 +1,14 @@
+#Container { font-size: 83%; } /* set ie global font-size here */
+
+* html #Header {/*only ie gets this style*/
+	\height: 101px;/* for ie5 */
+	he\ight: 100px;/* for ie6 */
+}
+
+/*\*/
+* html table {
+	width: auto;
+	wid\th: 100%;
+}
+/* IE5.win fix */
+
